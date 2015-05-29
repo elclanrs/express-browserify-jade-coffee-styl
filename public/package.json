@@ -1,0 +1,19 @@
+{
+  "name": "browserify-coffee-styl",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run watch",
+    "js:watch": "watchify -d -t coffeeify src/coffee/index.coffee -o lib/js/index.js",
+    "js:compile": "browserify -t coffeeify -p [minifyify --no-map] src/coffee/index.coffee -o lib/js/index.min.js",
+    "js:bower": "bower-files js | xargs cat | uglifyjs -m -c -o lib/js/bower.min.js",
+    "css:watch": "stylus -w -m --sourcemap-inline -u nib -u jeet -u rupture src/styl/index.styl -o lib/css/index.css",
+    "css:compile": "stylus -c -u nib -u jeet -u rupture src/styl/index.styl -o lib/css/index.min.css",
+    "css:bower": "bower-files css | xargs cat | cleancss -o lib/css/bower.min.css",
+    "fonts:bower": "bower-files eot ttf otf woff woff2 | xargs cp -t lib/fonts",
+    "watch": "npm run js:watch & npm run css:watch",
+    "assets": "npm run js:compile && npm run css:compile && npm run js:bower && npm run css:bower && npm run fonts:bower"
+  },
+  "devDependencies": {
+  }
+}

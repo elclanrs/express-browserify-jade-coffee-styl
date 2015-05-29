@@ -1,0 +1,18 @@
+#!/bin/bash
+
+npm install --save-dev \
+  watchify \
+  coffeeify \
+  minifyify \
+  stylus \
+  nib \
+  jeet \
+  rupture \
+  clean-css \
+  uglify-js
+
+bower install --save jquery
+bower install --save normalize.css
+bower install --save fontawesome
+
+rm $0

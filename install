@@ -1,0 +1,19 @@
+#!/bin/bash
+
+npm install --save \
+  nodemon \
+  browser-sync \
+  body-parser \
+  cookie-parser \
+  debug \
+  express \
+  jade \
+  morgan \
+  serve-favicon
+
+cd public
+sh install
+npm run assets
+cd ..
+
+rm $0

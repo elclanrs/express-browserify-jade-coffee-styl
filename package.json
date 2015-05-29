@@ -1,0 +1,13 @@
+{
+  "name": "browserify-coffee-styl",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "js:watch": "coffee -w -c -b -o . src",
+    "sync": "browser-sync start --no-open --no-notify --no-ghost-mode --no-online --no-ui --port 3001 --proxy localhost:3000 --files 'views/**/*.jade, ./**/*.js, ./**/*.css'",
+    "reload": "nodemon bin/www",
+    "start": "npm run reload & npm run js:watch & npm run sync & cd public && npm start"
+  },
+  "dependencies": {
+  }
+}

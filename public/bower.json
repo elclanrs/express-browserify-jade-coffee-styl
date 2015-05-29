@@ -1,0 +1,14 @@
+{
+  "name": "browserify-coffee-styl",
+  "authors": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
