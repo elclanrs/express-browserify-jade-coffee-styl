@@ -9,7 +9,8 @@ npm install --save-dev \
   jeet \
   rupture \
   clean-css \
-  uglify-js
+  uglify-js \
+  bower-files
 
 bower install --save jquery
 bower install --save normalize.css
