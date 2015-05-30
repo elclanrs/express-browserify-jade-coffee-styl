@@ -9,4 +9,4 @@ npm start
 cd public && npm run assets
 ```
 
-http://localhost:3001
+[http://localhost:3001](http://localhost:3001)
