@@ -1,6 +1,7 @@
 #!/bin/bash
 
 npm install --save \
+  coffee-script \
   nodemon \
   browser-sync \
   body-parser \
