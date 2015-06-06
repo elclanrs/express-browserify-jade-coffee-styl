@@ -1,5 +1,5 @@
 {
-  "name": "browserify-coffee-styl",
+  "name": "express-browserify-jade-coffee-styl",
   "version": "1.0.0",
   "private": true,
   "scripts": {
